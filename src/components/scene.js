@@ -1,5 +1,6 @@
 import React, { useEffect, useReducer } from 'react'
 
+import { LEVELS } from '../game/levels'
 import { MOVEMENT, getNewGameState, getGameStateFromLevel } from '../game/core'
 import { registerListener } from '../utils'
 
@@ -8,7 +9,6 @@ import Lives from './lives'
 import Block from './block'
 import Paddle from './paddle'
 import Ball from './ball'
-let LEVELS = '../game/levels.json'
 
 const MOVEMENT_KEYS = {
   LEFT: [65, 37],
